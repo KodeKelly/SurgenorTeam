@@ -13,11 +13,12 @@ body {
 }
 
 #home-section {
+  width: 100%;
   background: url(../images/surgenorStore.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 900px;
+  min-height: 1200px;
 }
 
 #home-section .dark-overlay {
@@ -25,19 +26,24 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 900px;
+  min-height: 1200px;
   background: rgba(0, 0, 0, 0.7);
 }
 
 #title {
-  margin-top: 30rem;
+  margin-top: 20rem;
   font-size: 3rem;
 }
-
+/*
 h1 {
-  font-size: 5rem;
-}
+  font-size: 10px;
+}*/
 
 #login-form {
-  margin-top: 30rem;
+  margin-top: 20rem;
+}
+
+#salesWelcome {
+  margin-top: 10rem;
+  font-size: 5rem;
 }

@@ -11,6 +11,14 @@ const UserSchema = new Schema({
     type: String,
     required: true
   },
+  user: {
+    type: String
+    //required: true
+  },
+  superUser: {
+    type: Boolean,
+    default: false
+  },
   date: {
     type: Date,
     default: Date.now
