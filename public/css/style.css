@@ -34,16 +34,19 @@ body {
   margin-top: 20rem;
   font-size: 3rem;
 }
-/*
-h1 {
-  font-size: 10px;
-}*/
+
+#construction {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 5rem;
+  color: yellow;
+}
 
 #login-form {
   margin-top: 20rem;
 }
 
 #salesWelcome {
-  margin-top: 10rem;
-  font-size: 5rem;
+  margin-top: 5rem;
+  font-size: 3rem;
 }

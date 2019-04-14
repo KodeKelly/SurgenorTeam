@@ -7,24 +7,10 @@ const { ensureAuthenticated } = require('../helpers/auth');
 require('../models/User');
 const User = mongoose.model('users');
 
-// Load DailyTasks Model
-//require('../models/DailyTasks');
-//const DailyTasks = mongoose.model('dailyTasks');
-
-// // Salesmain Index Page
-// router.post('/', ensureAuthenticated, (req, res) => {
-//   res.render('/');
-// });
-
-// // Salesmain Index Page
-// router.get('/', ensureAuthenticated, (req, res) => {
-//   res.render('salesmain/index');
-// });
-
-// Salesmain Index Page
+// SuperAdmin Index Page
 router.get('/', ensureAuthenticated, (req, res) => {
   User.find({ email: req.user.id }).then(users => {
-    res.render('salesmain/index', {
+    res.render('./superadmin/index', {
       users: users
     });
   });

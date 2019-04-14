@@ -18,6 +18,11 @@ router.get('/register', (req, res) => {
   res.render('users/register');
 });
 
+//User Regist by Admin
+router.get('/superadmin/register', (req, res) => {
+  res.render('users/superadmin/index');
+});
+
 // Login Form POST
 router.post('/login', (req, res, next) => {
   passport.authenticate('local', {
