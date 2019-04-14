@@ -13,10 +13,10 @@ router.get('/login', (req, res) => {
   res.render('users/login');
 });
 
-// User Register Route
-router.get('/register', (req, res) => {
-  res.render('users/register');
-});
+// // User Register Route
+// router.get('/register', (req, res) => {
+//   res.render('users/register');
+// });
 
 //User Regist by Admin
 router.get('/superadmin/register', (req, res) => {
@@ -86,11 +86,11 @@ router.post('/register', (req, res) => {
   }
 });
 
-// // Logout User
-// router.get('/logout', (req, res) => {
-//   req.logout();
-//   req.flash('success_msg', 'You are logged out');
-//   res.redirect('/users/login');
-// });
+// Logout User
+router.get('/logout', (req, res) => {
+  req.logout();
+  req.flash('success_msg', 'You are logged out');
+  res.redirect('/');
+});
 
 module.exports = router;

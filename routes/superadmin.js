@@ -10,7 +10,7 @@ const User = mongoose.model('users');
 // SuperAdmin Index Page
 router.get('/', ensureAuthenticated, (req, res) => {
   User.find({ email: req.user.id }).then(users => {
-    res.render('./superadmin/index', {
+    res.render('superadmin/index', {
       users: users
     });
   });
